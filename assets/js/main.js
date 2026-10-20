@@ -90,7 +90,11 @@ const bacp = document.querySelectorAll('.bacp-logo')
 Array.from(bacp).forEach(e => e.addEventListener('contextmenu', e => e.preventDefault()))
 
 
-// Map
+// Map - Leaflet
+
+const mapElement = document.getElementById('map');
+
+if (mapElement && typeof L !== 'undefined') {
 
 	const locations = [
 		["Rosa Therapy Center", 53.140442395542756, -1.1958635372977526],
@@ -124,6 +128,8 @@ Array.from(bacp).forEach(e => e.addEventListener('contextmenu', e => e.preventDe
 	// // leaflet handlers
 	// map.scrollWheelZoom.disable()
 	// map.dragging.disable()
+	
+}
 
 	
 // copyright current year
