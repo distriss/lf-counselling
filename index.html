@@ -12,30 +12,61 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script type="application/ld+json">
 			{
-				"@context": "http://schema.org",
-				"@type": "LocalBusiness",
-				"name": "Linda Fern Counselling",
-				"url": "https://lindaferncounselling.co.uk/",
-				"logo": "https://lindaferncounselling.co.uk/images/lf-nav-logo-color.png",
-				"description": "Linda Fern, an accredited counsellor with 18+ years of experience. Personalised counselling in Mansfield, Nottingham and Derby. In-person, online, and phone sessions available. Free 20-minute consultation.,"
-				"contactPoint": {
-				  "@type": "ContactPoint",
-				  "telephone": "+44 7840 501425",
-				  "email": "lindaferncounselling@gmail.com",
-				  "contactType": "Customer Service"
-				},
-				"address": [
-				  {
-					"@type": "PostalAddress",
-					"streetAddress": "Rosa Therapy Centre, The Limes 54 Nottingham Rd",
-					"addressLocality": "Mansfield",
-					"addressRegion": "Nottinghamshire",
-					"postalCode": "NG18 1BN",
-					"addressCountry": "United Kingdom",
-					"hasMap": "https://www.google.com/maps?q=Rosa+Therapy+Centre,+The+Limes+54+Nottingham+Rd,+Mansfield,+Nottinghamshire+NG18+1BN"					
-				  },
-				]
-			  }
+			  "@context": "https://schema.org",
+			  "@graph": [
+			    {
+			      "@type": "LocalBusiness",
+			      "@id": "https://lindaferncounselling.co.uk/#business",
+			      "name": "Linda Fern Counselling",
+			      "url": "https://lindaferncounselling.co.uk/",
+			      "logo": "https://lindaferncounselling.co.uk/images/lf-nav-logo-color.png",
+			      "description": "Linda Fern, an accredited counsellor with over 22 years of experience. Personalised counselling in Mansfield, Nottingham and Derby. In-person, online and telephone sessions available. Free 20-minute consultation.",
+			      "telephone": "+44 7840 501425",
+			      "email": "lindaferncounselling@gmail.com",
+			      "contactPoint": {
+			        "@type": "ContactPoint",
+			        "telephone": "+44 7840 501425",
+			        "email": "lindaferncounselling@gmail.com",
+			        "contactType": "customer service"
+			      },
+			      "address": {
+			        "@type": "PostalAddress",
+			        "streetAddress": "Rosa Therapy Centre, The Limes, 54 Nottingham Road",
+			        "addressLocality": "Mansfield",
+			        "addressRegion": "Nottinghamshire",
+			        "postalCode": "NG18 1BN",
+			        "addressCountry": "GB"
+			      },
+			      "hasMap": "https://www.google.com/maps?q=Rosa+Therapy+Centre,+The+Limes+54+Nottingham+Rd,+Mansfield,+Nottinghamshire+NG18+1BN",
+			      "areaServed": [
+			        {
+			          "@type": "City",
+			          "name": "Mansfield"
+			        },
+			        {
+			          "@type": "City",
+			          "name": "Nottingham"
+			        },
+			        {
+			          "@type": "City",
+			          "name": "Derby"
+			        }
+			      ],
+			      "founder": {
+			        "@id": "https://lindaferncounselling.co.uk/#linda"
+			      }
+			    },
+			    {
+			      "@type": "WebSite",
+			      "@id": "https://lindaferncounselling.co.uk/#website",
+			      "url": "https://lindaferncounselling.co.uk/",
+			      "name": "Linda Fern Counselling",
+			      "publisher": {
+			        "@id": "https://lindaferncounselling.co.uk/#business"
+			      }
+			    }
+			  ]
+			}
 		</script>
 	</head>
 	<body class="is-preload">
@@ -85,7 +116,7 @@
 					<header class="major">
 						<h2>Linda Fern Counselling</h2>
 					</header>
-					<p>My name is Linda Fern and I'm a qualified accredited Integrative Counsellor and Psychotherapist operating from Mansfield, Nottinghamshire & Derby. My counselling style incorporates a Person-centred approach, Attachment and Cognitive Behavioural Therapy. I have over 18 years of experience and can provide counselling and psychotherapy for a wide range of issues for both adults and young people.</p>
+					<p>My name is Linda Fern and I'm a qualified accredited Integrative Counsellor and Psychotherapist operating from Mansfield, Nottinghamshire & Derby. My counselling style incorporates a Person-centred approach, Attachment and Cognitive Behavioural Therapy. I have over 22 years of experience and can provide counselling and psychotherapy for a wide range of issues for both adults and young people.</p>
 
 					<p>If you would like to know more about my practice or therapeutic approach, <br>please get in touch to arrange a <em>free 20-minute</em> telephone consultation. <br> I offer in-person appointments at <em>Rosa Therapy Centre </em>in<em> <b> Mansfield</b></em> as well as online and telephone sessions, if preferred.</p>										
 				</div>
