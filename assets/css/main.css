@@ -221,11 +221,10 @@ input, select, textarea {
 
 	
 
-	blockquote {
-		border-left: solid 4px rgba(144, 144, 144, 0.5);
+	blockquote {		
 		font-style: italic;
 		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
+		padding: 0.5em 0 0.5em 0;
 	}
 
 	code {
@@ -666,7 +665,7 @@ nav ul li a {
 	font-weight: 300;
 }
 
-#four, #seven, #ten {
+#four, #seven {
 	margin-top: 50px;
 }
 
@@ -2979,6 +2978,18 @@ nav ul li a {
 				width: 100%;
 			}
 
+		.image.rnd {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;			
+		}	
+
+			.image.rnd img {
+				width: 100%;
+				margin-inline: auto;
+				border-radius: 50%;
+			}
+
 		.image.logo-icon {
 			max-width: max-content;
 			margin: auto;
@@ -3458,14 +3469,22 @@ nav ul li a {
 		.main.style1 {
 			background: #fff;
 		}
-		
 
+		#ten.main.style1 {
+			padding: 6em 0 0 0;
+		}
+	
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.774);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
+			background-image: linear-gradient(0deg, rgba(55, 87, 79, 0.3), rgba(40, 59, 51, 0.815)), url("../../images/header2.jpg");
 			background-size: auto,							cover;
+		}
+
+		.main.style2.alt {
+			background: #94ac91;
+			background-image: none;
 		}
 
 			.main.style2 a {
@@ -3554,7 +3573,7 @@ nav ul li a {
 		}
 
 		#nine.main {
-			padding-top: 1em;
+			padding-top: 2em;
 		}
 		
 	.icon-box {
@@ -3582,6 +3601,14 @@ nav ul li a {
 
 	.icon-box:hover {
 		background-color: #7e9a79;
+	}
+
+	.main.style2.alt .icon-box {
+				background-color: #ffffff;
+			}
+
+	.main.style2.alt .icon-box:hover {
+		background-color: #ffffff93;
 	}
 	
 	.icon-container {
@@ -4233,6 +4260,17 @@ nav ul li a {
 /* Medium */
 
 	@media screen and (max-width: 980px) {
+
+		/* Image */
+		.image.rnd img {
+				width: 60%;
+			}
+		
+		/* Blockquote */
+		blockquote {
+			max-width: 70%;
+			margin-inline: auto;
+		}	
 
 		/* List */
 
