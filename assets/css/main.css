@@ -5,10 +5,22 @@
 */
 
 
-@import url("all.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Jomhuria&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,600;8..144,700;8..144,900&display=swap');
+@import url("fontawesome-all.min.css");
+
+@font-face {
+    font-family: 'Fanwood Text';
+    src: url('/lf-counselling/assets/fonts/FanwoodText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('/lf-counselling/assets/fonts/RobotoFlex.ttf') format('truetype');
+    font-weight: 200 900;
+    font-display: swap;
+}
 
 
 html, body, div, span, button, applet, object,
@@ -118,7 +130,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: 'Roboto Flex', "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Roboto Flex', Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 200;
 		line-height: 1.65em;
@@ -3479,7 +3491,7 @@ nav ul li a {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.774);
 			background-attachment: fixed,							fixed;
-			background-image: linear-gradient(0deg, rgba(55, 87, 79, 0.3), rgba(40, 59, 51, 0.815)), url("../../images/header2.jpg");
+			background-image: linear-gradient(0deg, rgba(55, 87, 79, 0.3), rgba(40, 59, 51, 0.815)), url("../../images/header2.webp");
 			background-size: auto,							cover;
 		}
 
@@ -3642,7 +3654,7 @@ nav ul li a {
 		background-color: #333;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed;
-		background-image: url("images/overlay1.png"), url("../../images/header.jpg");
+		background-image: url("images/overlay1.png"), url("../../images/header.webp");
 		background-position: top left,					center center;
 		background-size: auto,							cover;
 		overflow: hidden;
@@ -3953,7 +3965,7 @@ nav ul li a {
 
 	#footer {
 		padding: 4em 0 4em 0 ;
-		background-color: #81988b;
+		background-color: #738b7e;
 		color: rgba(255, 255, 255, 0.932);		
 		text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);	
 		text-align: center;
