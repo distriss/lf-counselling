@@ -448,6 +448,7 @@ nav ul li a {
 	color: #ffffff;
 	text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 	text-decoration: none;
+	text-wrap: nowrap;
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
